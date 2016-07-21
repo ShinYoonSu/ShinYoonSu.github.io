@@ -1,0 +1,99 @@
+*주소 링크 코드 입력 방법
+1. a+tap = <a href="주소 사이트"></a> 
+            ex)<a href="http://naver.com"></a> 
+            단, 새창이 안 생김! 
+
+2. a+tap = <a href="주소 사이트" target="_blank"></a>            
+            새창을 만들고 싶으면 뒤에 target="_blank" 코드 입력
+            ex)<a href="http://naver.com target="_blank"></a>
+-----------------------------------------------------------------------------------------------------------------------
+
+3. link:touch / link:favicon 
+-----------------------------------------------------------------------------------------------------------------------
+ 
+* <head></head> 영역
+1. meta:compat 이라고 코드 입력하면
+    <meta http-equiv="X-UA-Compatible" content="IE=7"> 나온다. 
+    여기서 <meta http-equiv="X-UA-Compatible" content="IE=edge"> 로 바꾸면 된다.
+           
+            
+* <body></body> 영역
+1. h1 - h1 ~ h6 까지 있다.
+
+
+2. li - 리스트 작성할떄 쓰는 코드
+ex) <li></li>
+
+
+3. ul - 리스트를 구분 안 할 때 쓰는 코드
+<ul>
+    <li>*나무</li>
+    <li>*배</li>
+    <li>*바다</li>
+</ul>
+
+4. ol - 리스트를 구분 할떄 쓰는 코드
+<ol>
+    <li>1.나무</li>
+    <li>2.사과</li>
+    <li>3.과일</li>
+</ol>
+
+5. 결론은 <ul></ul> 코드는 추가 해서 사용 가능하다. 단, <ol></ol>은 빼고!!
+<ul>
+    <li>과일
+        <ul>
+            <li>1.나무</li>
+            <li>2.사과</li>
+            <li>3.과일</li>
+        </ul>
+    </li>
+</ul>
+-----------------------------------------------------------------------------------------------------------------------
+
+6. 이태리채 하는 방법
+<i>korea</i> - i : 기울기 
+<sup>korea</sup> - sup : 글자 위로 올리기 
+<ins>korea</ins> - ins : 아래 밑줄
+<del>korea</del> - del : 중간 밑줄 
+-----------------------------------------------------------------------------------------------------------------------
+
+7. 웹에서 오디오 실행시키기
+   <audio autoplay="autoplay" controls="controls">
+      <source src="../audio/One_Summer_Night.mp3" type="audio/mp3" /> 
+   </audio> 이렇게 하면 된다.
+
+8. 웹에서 비디로 실행시키기
+    <video controls="controls">
+    <source src="../video/Modern.mp4" type="video/mp4" >
+    </video> 이렇게 하면 된다.
+    단, <!-- audio: mp3, ogg 가능 --> 나머지는 확장자는 안됨!!
+       <!-- video: mp4, ogg, oga 가능 --> 나머지는 확장자는 안됨!!
+-----------------------------------------------------------------------------------------------------------------------
+
+기능 1. autoplay : 웹 실행시키면 자동으로 음악 틀어주는 기능
+
+pt(인쇄시 9pt / 웹 12pt)
+
+16px = 12pt = 100% = 1em = 1rem (최초의 설정시)
+
+<a name="fonts"> 폰트 </a>
+font-size
+font-family
+font-weight
+font-style
+line-height
+color
+text-aligh
+text-indent
+-------------------------------------
+기능 선택자 : 기존 요소에 추가로 어떠한 기능을 하는것들
+hover{}  'a:hover{}' : a 요소에 마우스를 올렸을때
+active{}  'a:active{}' : a 요소에 마우스를 누르고 있을때
+linked{} 'a:linked{}'  : a 요소에 링크가 되어 있을때
+visited{} 'a:visited{}' : 해당하는것을 방문했을때
+before{} 'p:before{}' : p요소의 이전에 해당하는 부분(실제 존재하는 요소가 아니고, 시각적효과)
+after{} : 'p:after{}' : p 요소의 이후에 해당하는 부분(실제 존재하는 요소가 아니고, 시각적 효과)
+focus{} : 'a:focus{}' : focus가 가능한 요소중(a, button, inout.....) focus가 잡혔을경우
+blur{} : 'a:blur{}' : focus가 가능한 요소 중, focus처리가 되어 있지 않는 것
+checked{} : 'input:checked{}' : input 요소중 type속성이 radio, checkbox 처럼 선택을 할 수 있는 것을 중 선택했다면 처리되는 기능
